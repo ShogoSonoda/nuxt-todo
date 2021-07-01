@@ -22,7 +22,7 @@ export const actions = {
     }
   }),
   remove: firestoreAction((context, id) => {
-    todosRef.doc(todo.id).delete()
+    todosRef.doc(id).delete()
   }),
   toggle: firestoreAction((context, todo) => {
     todosRef.doc(todo.id).update({
